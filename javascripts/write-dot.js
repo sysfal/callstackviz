@@ -65,7 +65,7 @@ function createDot(trace, dot) {
         // handle std::
         var method = key.replace(/std::/g, "std__");
 
-        // ignore name spaces after < e.g. lb::Petrel::Configuration::ServiceLocator::tryResolveSingleton<Slb::Petrel::Core::IProcessManager>
+        // ignore name spaces after <
         var n = method.indexOf("<");
         if (n != -1) {
             var end = method.substr(n);
